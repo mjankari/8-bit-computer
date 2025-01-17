@@ -1309,7 +1309,7 @@
 		(uuid "194cbd61-1c4f-4940-a2aa-968e00da3091")
 	)
 	(junction
-		(at 163.83 40.64)
+		(at 140.97 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21895cba-3b59-42a0-baf5-09405209954c")
@@ -1337,14 +1337,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac4e7edb-ea51-4213-800c-d391eac80ed2")
-	)
-	(no_connect
-		(at 177.8 45.72)
-		(uuid "0fca1238-15b4-40f7-821a-6fb4b3bff3ef")
-	)
-	(no_connect
-		(at 177.8 50.8)
-		(uuid "1710b25d-1951-4382-b990-8335eed60f3f")
 	)
 	(wire
 		(pts
@@ -1425,6 +1417,26 @@
 			(type default)
 		)
 		(uuid "2bede8f4-7e26-4da9-ad8a-4fd6ec558f0d")
+	)
+	(wire
+		(pts
+			(xy 157.48 45.72) (xy 157.48 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c4cd712-9c60-4666-98be-3108dffc267c")
+	)
+	(wire
+		(pts
+			(xy 171.45 60.96) (xy 171.45 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f49ca40-616b-458b-9e16-e445025c38b4")
 	)
 	(wire
 		(pts
@@ -1518,7 +1530,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 40.64) (xy 163.83 39.37)
+			(xy 177.8 45.72) (xy 157.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6834a77a-3f85-4e6d-b8ba-20eab074c4f5")
+	)
+	(wire
+		(pts
+			(xy 140.97 40.64) (xy 140.97 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1648,13 +1670,23 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 41.91) (xy 163.83 40.64)
+			(xy 140.97 41.91) (xy 140.97 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b8ff4392-dba5-4437-a907-48fdbf35a1aa")
+	)
+	(wire
+		(pts
+			(xy 177.8 63.5) (xy 171.45 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba698c2d-088a-44dd-b9e6-082515771726")
 	)
 	(wire
 		(pts
@@ -1708,6 +1740,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 50.8) (xy 177.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb35abc7-c419-4fc5-a5e0-4a27e000f358")
+	)
+	(wire
+		(pts
 			(xy 215.9 45.72) (xy 213.36 45.72)
 		)
 		(stroke
@@ -1748,7 +1790,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 40.64) (xy 177.8 40.64)
+			(xy 140.97 40.64) (xy 177.8 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1775,6 +1817,76 @@
 			(type default)
 		)
 		(uuid "fd8e9235-2f21-4a72-948a-d369909ea7da")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 157.48 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02bcbab2-4507-45d7-98cc-89308a54d728")
+		(property "Reference" "C5"
+			(at 161.29 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.01μF"
+			(at 161.29 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.4452 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 157.48 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c4fd861-949d-42d4-8102-8d62acf17f7e")
+		)
+		(pin "2"
+			(uuid "715499e2-0e46-41dc-a596-885ba5aaf8af")
+		)
+		(instances
+			(project "8-bit-computer"
+				(path "/e5c6d094-d955-47be-ab01-04c61f4dd6d0/647cf950-2366-40d1-aa52-e11a7813f05b"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -1844,7 +1956,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 163.83 46.99 90)
+		(at 140.97 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1853,7 +1965,7 @@
 		(fields_autoplaced yes)
 		(uuid "1edbea2a-eeaa-4df9-99ff-59b86c16672a")
 		(property "Reference" "SW1"
-			(at 165.1 45.7199 90)
+			(at 142.24 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1862,7 +1974,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 165.1 48.2599 90)
+			(at 142.24 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1871,7 +1983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 46.99 0)
+			(at 135.89 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1880,7 +1992,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 46.99 0)
+			(at 135.89 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1889,7 +2001,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 46.99 0)
+			(at 140.97 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2048,7 +2160,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 163.83 35.56 0)
+		(at 140.97 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2057,7 +2169,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e828445-0b1b-40fb-85ca-dd00c5afab71")
 		(property "Reference" "R4"
-			(at 166.37 34.2899 0)
+			(at 143.51 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2066,7 +2178,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 166.37 36.8299 0)
+			(at 143.51 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2075,7 +2187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.052 35.56 90)
+			(at 139.192 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2084,7 +2196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 35.56 0)
+			(at 140.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,7 +2205,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 163.83 35.56 0)
+			(at 140.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2442,6 +2554,72 @@
 			(project "8-bit-computer"
 				(path "/e5c6d094-d955-47be-ab01-04c61f4dd6d0/647cf950-2366-40d1-aa52-e11a7813f05b"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 171.45 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ad4c8a6-8299-499b-8268-317b6b444eba")
+		(property "Reference" "#PWR020"
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 171.45 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 171.45 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c808da85-5b65-49ab-b7ed-7f356bd6836f")
+		)
+		(instances
+			(project "8-bit-computer"
+				(path "/e5c6d094-d955-47be-ab01-04c61f4dd6d0/647cf950-2366-40d1-aa52-e11a7813f05b"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3198,7 +3376,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 52.07 0)
+		(at 140.97 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3207,7 +3385,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2040ebb-ca71-4521-8d27-dfcb7e235cb6")
 		(property "Reference" "#PWR012"
-			(at 163.83 58.42 0)
+			(at 140.97 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3216,7 +3394,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 57.15 0)
+			(at 140.97 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3224,7 +3402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 52.07 0)
+			(at 140.97 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3233,7 +3411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 52.07 0)
+			(at 140.97 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3242,7 +3420,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 52.07 0)
+			(at 140.97 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3488,7 +3666,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 163.83 31.75 0)
+		(at 140.97 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3497,7 +3675,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2e16d97-3fe4-4676-949e-3cf07eded7fd")
 		(property "Reference" "#PWR013"
-			(at 163.83 35.56 0)
+			(at 140.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +3684,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 163.83 26.67 0)
+			(at 140.97 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3514,7 +3692,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 31.75 0)
+			(at 140.97 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3523,7 +3701,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 31.75 0)
+			(at 140.97 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3532,7 +3710,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 163.83 31.75 0)
+			(at 140.97 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3882,6 +4060,72 @@
 			(project "8-bit-computer"
 				(path "/e5c6d094-d955-47be-ab01-04c61f4dd6d0/647cf950-2366-40d1-aa52-e11a7813f05b"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2e1a346-0d6d-4bcf-bc22-d40cab146efb")
+		(property "Reference" "#PWR019"
+			(at 157.48 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "226ce344-d908-4d48-8eca-a2f067419776")
+		)
+		(instances
+			(project "8-bit-computer"
+				(path "/e5c6d094-d955-47be-ab01-04c61f4dd6d0/647cf950-2366-40d1-aa52-e11a7813f05b"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
